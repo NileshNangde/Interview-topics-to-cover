@@ -1,0 +1,637 @@
+
+     +++++++++++++++++++++++++
+     1) Collections
+     +++++++++++++++++++++++++
+     2) Java 8
+     +++++++++++++++++++++++++
+     3) Stream API
+     +++++++++++++++++++++++++
+     4) Multithreading
+     +++++++++++++++++++++++++
+     5) Spring Security
+     +++++++++++++++++++++++++
+     6) Spring COre 
+     +++++++++++++++++++++++++
+     7) Spring Boot
+     +++++++++++++++++++++++++
+     8) Spring MVC
+     +++++++++++++++++++++++++
+     9) REST API Development
+     +++++++++++++++++++++++++
+     10) Microserviecs
+     +++++++++++++++++++++++++
+     11) JUnit
+     +++++++++++++++++++++++++
+     12) Maven 
+     +++++++++++++++++++++++++
+     13) SonarQube
+     +++++++++++++++++++++++++
+     14) Logging
+     +++++++++++++++++++++++++
+     15) HTML
+     +++++++++++++++++++++++++
+     16) CSS
+     +++++++++++++++++++++++++
+     17) JavaScript
+     +++++++++++++++++++++++++
+     18) React JS
+     +++++++++++++++++++++++++
+     19) TypeScript
+     +++++++++++++++++++++++++
+     20) LInux
+     +++++++++++++++++++++++++
+     21) AWS
+     +++++++++++++++++++++++++
+     23) Docker
+     +++++++++++++++++++++++++
+     24) Jenkins
+     +++++++++++++++++++++++++
+     25) K8S
+     +++++++++++++++++++++++++
+     26) JIRA
+     +++++++++++++++++++++++++
+     27) SQL
+     +++++++++++++++++++++++++
+     28) GIT
+     +++++++++++++++++++++++++
+     29) java.lang package
+     +++++++++++++++++++++++++
+     30) Java Design Patterns
+     +++++++++++++++++++++++++
+     31) SOLID principles in java
+     +++++++++++++++++++++++++
+     32) Singleton Design pattern
+     +++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             ########################
+                    Spring Core
+             ########################
+           
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           1) What is Spring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           2) What are the features of Spring Framework
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           3) What is Depenency Injection
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           4) What are the types of Dependency Injection
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           5) What is IOC in Spring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           6) What is Spring Configuration file
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           7) What is Spring Bean 
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           8) What is difference between Constructor and Setter Injection
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           9) What is mean by Bean Scope and What are the Bean Scope provided by SPring FW 
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           10) What is Bean Wiring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           11) What is Autowiring in Spring and What are the different modes of it 
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           12) What is difference between @Component and @Bean
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           13) How many types of IOC Container are there in Spring 
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           14) What is the use of @Required annotation in SPring FW
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           15) What is the use of @Autowired annotation in Spring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           16) What is @Qualifier annotation in Spring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           17) What is @Primary annotation in Spring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           18) What are lifecycle methods in Spring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           19) What are different ways of writing lefecycle methods in Spring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           20) What are common Implementations of the ApplicationContext
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           21) What are Sterotype annotations
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           22) What are the different Modules in SPring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           23) What is Profiles in SPring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           24) What is inner beans in SPring
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           25) What will happen when we perform both constructor & setter injections on same variable ?
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           26) What is Component Scanning 
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           #) Can we specify more than one base package -yes | 
+              @ComponentScan(basePackages = { "in.ashokit", "com.wallmart" })
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           27) What is POJO
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           28) How to get bean object from IOC ?
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           29) Explain POM.xml
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           30) Explain Lombok 
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           31) What is Difference between @Configuration and @Component and @ComponentScan annoatations
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           32) What is mean by Framework
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           33) what is ref attribute
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+           34) Spring Annotations
+           ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    @Configuration
+                    ++++++++++++++ 
+                    @Component 
+                    ++++++++++++++
+                    @Service 
+                    ++++++++++++++
+                    @Repository
+                    ++++++++++++++ 
+                    @Scope 
+                    ++++++++++++++
+                    @Autowired 
+                    ++++++++++++++
+                    @Bean 
+                    ++++++++++++++
+                    @Qualifier
+                    ++++++++++++++ 
+                    @Primary 
+                    ++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+             ########################
+                    Spring Boot
+             ########################
+
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            1) What is difference between spring and spring boot 
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            2) SPring Boot application folder structure
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            3) Advanteges of Spring Boot over Spring
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            4) What is Start Class in Spring Boot ?
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            5) What is @SpringBootApplication  annotation ?
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            6) Internals of Spring boot application
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            6) How IOC starting in Spring Boot ?
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            7) What is SpringAppliction.run ( ) method ?
+
+                - load initializers
+                - start listeners
+                - print banner
+                - create IOC container
+                - call runners
+                - return ioc obj
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            8) What is Banner in Spring Boot ?
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            9) What is Runner in Spring Boot ?
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            10) How to create SpringBoot Application 
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            11) Most common Annotations 
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                   1) @SpringBootApplication
+                   ++++++++++++++++++++++++++
+                   2) @Component
+                   ++++++++++++++++++++++++++
+                   3) @Configuration
+                   ++++++++++++++++++++++++++
+                   4) @Bean
+                   ++++++++++++++++++++++++++
+                   5) @Scope
+                   ++++++++++++++++++++++++++
+                   6) @Autowired
+                   ++++++++++++++++++++++++++
+                   7) @RestController
+                   ++++++++++++++++++++++++++
+                   8) @Controller
+                   ++++++++++++++++++++++++++
+                   9) @RequestParam
+                   ++++++++++++++++++++++++++
+                   10) @RequestBody
+                   ++++++++++++++++++++++++++
+                   11) @PathVariable
+                   ++++++++++++++++++++++++++
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+             ########################
+                RestFull Services
+             ########################
+            
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            1) What is RESTfull Services
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            2) Why RestFull Services
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            3) What are the different Distribution Technologies
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            4) Rest Architecture
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            5) Communication mode between COnsumer and Provider
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            6) Http Protocols
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            7) Json
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            8) XML
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            9) Provider Development
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            10) @RestController
+               ++++++++++++++++++++++++++
+                @Getmapping
+                ++++++++++++++++++++++++++
+                @PostMapping
+                ++++++++++++++++++++++++++
+                @ResponseBody
+                ++++++++++++++++++++++++++
+                @RequestBody
+                ++++++++++++++++++++++++++
+                @RequestParam
+                ++++++++++++++++++++++++++
+                @PathVariable
+                ++++++++++++++++++++++++++
+                ResponseEntity 
+                ++++++++++++++++++++++++++
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            11) Query Parameter and Path Parameter
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            12) Consumes and Provider
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            13) PostMan   - to test the rest api functionality
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            14) Swagger-Api
+
+                     Note : In Rest API developer View Resolver is not required 
+                            Why :
+                            Because B-2-B communication
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+              ########################
+                JUnit 
+              ########################
+
+            1) What is JUnit
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            2) What is Unit Testing
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+            3) What is Isolated Testing
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            4) What is Integration Testing
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            5) What is Mocking
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            6) What is Code Coverage
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            7) Annotations  and methods used for Unit testing
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            8) How to perform Unit testing for Static methods
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            9) how to perform unit testing for Rest Controllers methods
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            10) How to perform unit testing for Service class methods 
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            Note: We dont perform testing for Entity classes , Binding classes
+
+
+
+
+
+
+             ########################
+                Microservices 
+             ########################
+
+             1) What is Monolith Application
+             ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             2) What is Microservices Application
+             ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             3) Advantages of Microservices Applications
+             ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             4) Challenges with Microservices
+             ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             5) Microservices Architecture
+             ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             6) 
+ 
+
+
+             ########################
+                Collections
+             ########################
+
+            1) Why we need to go for collections 
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            2) What is collection framework
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            3) Collections vs Arrays
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            4) Collections Hierarchy
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            5) Difference between Collection , Collections and Collections Framework
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            6) Main Collections Interfaces
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            7) Cursors
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            8) List Interface ,Implementations classes , methods and interals
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            9) Set interface , implementations classes , methods and interals
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            10) Queue interface and implementations classes , methods and interals
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            11) Map interface and implementations classes , methods and interals
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            12) Collections Sorting
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            13) Properties class
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+            14) Fail Fast and Fail Safe collections
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            15) IdentityHashMap and WeakHashMap
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            16) java.util package
+                 -> java.util.Scanner
+                 -> java.util.Date
+                 -> java.util.Calender
+                 -> java.util.StringTkenizer
+        
+                ***IMP Interview Q***
+
+                1) Difference between ArrayList and Vector
+                2) Differences between and HashMap and Hashtable: 
+                3) Difference between HashMap and ConcurrentHashMap
+                4) Comparable vs Comparator
+
+
+
+             ########################
+                Java 1.8
+             ########################
+
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            1) What are new changes in java 8
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            2) Interface change
+                  default methods
+                  static methods
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            3) Why Default and static methods introduces in java 8
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            4) Lambda expressions
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            5) How to write Lambda Expression 
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            6) How to invoke lambda expression
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            7) Functional Interface
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            8) Collections Sorting using Lambda
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            9) Thread Creation using Lambda
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            10) Method Refrences and Constructor Refrences
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            11) StringJoiner class  java.util.StringJoiner
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            12) forEach() method
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            13) Optional class    java.util.Optional
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+             ########################
+                Maven
+             ########################
+
+
+                1) What is Maven  , What are the 4 main points of maven
+                2) Maven Terminology
+                3) Maven Goals
+                4) Can we (Change)customize project build jar or war name ?
+                5) What is mean by Maven Dependencies
+                6) Maven Repositories
+                        - local
+                        - central
+                        - remote (nexus/jfrog)
+                7) Transitive Dependicies
+                8) Depencency Enclusion concept
+                8) Depenency Scopes
+                10) Maven Multi Module
+
+                Note: We need to modify maven settings to connect with remote repository.
+
+
+
+             ########################
+                GIT
+             ########################
+
+
+             1) What is mean by version control software
+             2) What is GIT HUB
+             3) Git Architecture
+             4) Git commands
+             5) What is .gitignore in git repo ?
+             6) What is git conflict ?
+             7) Git Branches
+             8) How to create new branch from main branch
+             9) How to change the main brach to push changes in develop branch
+             10) If I by mistake added on file into stating area how to remove from 
+             11) Pull Request
+             12) How many repository are available for your project
+             13) how to get the repository to clone project and push project
+             14) How to clone particular branch code
+             15) How to merge from one branch to another branch
+
+              1)  git clone vs git pull
+              2)  git push  vs git pull
+              3)  git stash   and git stash apply
+              4)  git fetch vs git pull
+              5)  git merge  vs  got rebase
+
+             Note: repository is only one but branches are different
+
+
+
+              ########################
+                Spring Data JPA
+              ########################
+
+            1) What is Data Jpa 
+            2) What is difference between JPA and ORM
+            2) Why there are Jpa Repository , and what is Jpa Repository
+            3) What is difference between JPA and Hibernate 
+            3) What is Difference between Crud Repo and Jpa Repo
+            4) What is Dependency for Jpa Repo
+            5) what are the steps to develop the Data Jpa Application
+            6) what is this comand spring.jpa.hibernate.ddl-auto=update
+            7) what is this comand spring.jpa.show-sql=true
+            8) What are the Different Crud Repo Methods
+            9) Expalin findBy 
+            10) What is mean by Custon Queries
+            Note: To represent Custom Query we are using @Query annotation.
+
+            11) Expalin the difference between HQL queries and SQL queries
+            12) What are the different operations we are perform using JPA repository
+            13) Explain what is Pagination and Explain how to perform pagination operation
+            14) What is Query By Example in JPA Explain by Example  => Used to construct query dynamically
+            15) What is TimeStamping in JPA
+            16) What is Generator in JPA and How to Specify strategies for Generator
+            17) What is Custom Generator 
+              Note: Generators will not support for Composite Primary keys
+              Note: The class which is representing Composite Keys should implement Serializable interface.
+
+            18) What is Composite Primary Keys  and its  annotations 
+            19) How to rollback transaction in data jpa ?
+            20) Association Mapping 
+                   Unidirectional Mapping
+                    -  @ManyToOne
+                    -  @OneToMany
+                    -  @OneToOne
+                    -  @ManyToMany
+
+                  Bidirectional Mapping
+                    - @OneToMany 
+                    - @ManyToMany 
+
+            
+
+
+            Data JPA Annotations
+            #####################
+
+            1) @Entity
+            2) @Table
+            3) @Id
+            4) @Column
+            5) @GeneratedValue
+            6) @GenericGenerator
+            7) @CreationTimestamp
+            8) @UpdateTimestamp
+            9) @Embeddable
+            10) @EmbeddedId
+            11) @Transactional
+            12) @Modifying
+            13) @Lob
+            14) @Query
+
+
+
+
+
+              ########################
+                Spring Web MVC
+              ########################
+
+
+                1) What is Spring Web MVC?
+                2) Web Application vs. Distributed Application
+                3) What are the advantages with Spring Web MVC?
+                4) Spring Web MVC Architecture
+                5) What is DispatcherServlet?
+                6) What is Handler Mapper?
+                7) What are Controller / Request Handler?
+                8) What is ModelAndView?
+                9) What is View Resolver?
+                10) What is View?
+                11) HTTP Methods (@GetMapping & @PostMapping)
+                12) What is @RequestParam ?
+                13) Spring MVC Form Tag Library
+                14) H2 Database
+                15) What is Thymeleaf?
+                16) How to perform Form Validations?
+                17) CRUD App with Boot + Web MVC + Data JPA + Thymeleaf + BS
+                18) What is @ModelAttribute?
+                19) How to change Embedded Container from Tomcat to Jetty?
+                20) How to change Embedded Container Port Number?
+                21) How to configure Context Path in Spring Boot?
+                22) What is @ResponseBody annotation?
+                23) What is @Controller & @RestController?
+                24) What is URL ambiguity in Spring Web MVC?
+                25)  How to handle Exceptions in Spring Web MVC?
+                26) What is Local Exception Handling?
+                27) What is Global Exception Handling?
+                28) What is @ControllerAdvice and @ExceptionHandler ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
